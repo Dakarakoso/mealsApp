@@ -2,7 +2,7 @@ import React from "react";
 import { Searchbar } from "react-native-paper";
 import { FlatList } from "react-native";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
-import { Spacer } from "../../../components/Spacer/spacer.component";
+import { Spacer } from "../../../components/spacer/spacer.component";
 
 import {
   SafeArea,
