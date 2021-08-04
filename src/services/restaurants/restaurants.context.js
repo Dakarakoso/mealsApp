@@ -31,7 +31,7 @@ export const RestaurantContextProvider = ({ children }) => {
   useEffect(() => {
     retrieveRestaurants();
   }, []);
-  console.log(restaurants);
+  // console.log(restaurants);
   return (
     <RestaurantsContext.Provider
       value={{
