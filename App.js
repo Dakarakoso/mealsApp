@@ -46,6 +46,8 @@ const createScreenOptions = ({ route }) => {
   };
 };
 
+const setTabBarColor = { activeTintColor: "tomato", inactiveTintColor: "gray" };
+
 export default function App() {
   const [oswaldLoaded] = useOswald({
     Oswald_400Regular,
@@ -67,10 +69,7 @@ export default function App() {
             <NavigationContainer>
               <Tab.Navigator
                 screenOptions={createScreenOptions}
-                tabBarOptions={{
-                  activeTintColor: "tomato",
-                  inactiveTintColor: "gray",
-                }}
+                tabBarOptions={setTabBarColor}
               >
                 <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
                 <Tab.Screen name="Map" component={Map} />
