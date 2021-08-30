@@ -1,11 +1,11 @@
 const { locations: locationsMock } = require("./geocode.mock");
 const functions = require("firebase-functions");
 
-module.exports.geocodeRequest = (req, res, client) => {
-  const { city, mock } = req.query;
+module.exports.geocodeRequest = (request, response, client) => {
+  const { city, mock } = request.query;
   if (mock === "true") {
     const locationMock = locationsMock[city];
-    res.json(locationMock);
+    response.json(locationMock);
   }
   client
     .geocode({
@@ -16,10 +16,10 @@ module.exports.geocodeRequest = (req, res, client) => {
       timeout: 1000,
     })
     .then((result) => {
-      return res.json(result.data);
+      return response.json(result.data);
     })
     .catch((e) => {
-      res.status(400);
-      return res.send(e.response.data.error_message);
+      response.status(400);
+      return response.send(e.response.data.error_message);
     });
 };
