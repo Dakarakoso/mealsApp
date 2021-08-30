@@ -5,11 +5,12 @@ import { Ionicons } from "@expo/vector-icons";
 import { SettingsNavigator } from "./settings.navigator";
 import { RestaurantsNavigator } from "./restaurants.navigator";
 import { MapScreen } from "../../features/map/screen/map.screen";
-import { CheckoutScreen } from "../../features/checkout/screens/checkout.screen";
+import { CheckoutNavigator } from "./checkout.navigator";
 import { CartContextProvider } from "../../services/cart/cart.context";
 import { RestaurantContextProvider } from "../../services/restaurants/restaurants.context";
 import { LocationContextProvider } from "../../services/location/location.context";
 import { FavouritesContextProvider } from "../../services/favourites/favourites.context";
+import { colors } from "../../infrastructure/theme/colors";
 
 const Tab = createBottomTabNavigator();
 
@@ -26,8 +27,8 @@ const createScreenOptions = ({ route }) => {
     tabBarIcon: ({ size, color }) => (
       <Ionicons name={iconName} size={size} color={color} />
     ),
-    tabBarActiveTintColor: "tomato",
-    tabBarInactiveTintColor: "gray",
+    tabBarActiveTintColor: colors.brand.primary,
+    tabBarInactiveTintColor: colors.brand.muted,
     tabBarStyle: [
       {
         display: "flex",
@@ -56,7 +57,7 @@ export const AppNavigator = () => (
             <Tab.Screen
               options={{ headerShown: false }}
               name="Checkout"
-              component={CheckoutScreen}
+              component={CheckoutNavigator}
             />
             <Tab.Screen
               options={{ headerShown: false }}

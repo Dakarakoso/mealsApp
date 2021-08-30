@@ -17,7 +17,8 @@
     "@googlemaps/google-maps-services-js": "^3.1.16",
     "firebase-admin": "^9.11.1",
     "firebase-functions": "^3.15.4",
-    "ngrok": "^4.1.0"
+    "ngrok": "^4.1.0",
+    "stripe": "^8.171.0"
   },
   "devDependencies": {
     "firebase-functions-test": "^0.2.0"
