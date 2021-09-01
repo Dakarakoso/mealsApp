@@ -23,8 +23,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -62,8 +60,7 @@ Describe the project here
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This is an example of how you set up to run locally.To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -73,6 +70,9 @@ You should have node installed.
   ```sh
   npm install npm@latest -g
   ```
+ you also need to install firebase CLI learn more [here](https://github.com/firebase/firebase-tools)
+   
+   
 
 ### Installation
 
@@ -80,18 +80,40 @@ You should have node installed.
    ```sh
    git clone https://github.com/Dakarakoso/mealsApp.git
    ```
-3. Install NPM packages or YARN
+   
+3. Go into the project repo
+```sh
+cd mealsApp
+```
+4. Install NPM packages or YARN packages
    ```sh
    npm install
+   
+   or
+   
    yarn 
    ```
    
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
+5. Then cd into /functions and install NPM packages or YARN packages
+   ```sh
+   npm install
+   
+   or
+   
+   yarn 
    ```
+   
+6.Set environment configuration for google and stripe
 
+```sh
+firebase functions:config:set google.key="THE API KEY" 
+firebase functions:config:set stripe.key="THE API KEY" 
+```
+7.Now run this command in order to be able to run locally
 
+```sh
+firebase functions:config:get > .runtimeconfig.json
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
