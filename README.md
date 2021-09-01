@@ -63,7 +63,7 @@ This is an example of how you set up to run locally.To get a local copy up and r
 
 ### Prerequisites
 
-You should have node installed.
+You should have node installed. Learn more [here](https://nodejs.org/en/download/)
 
 * npm
   ```sh
@@ -87,18 +87,14 @@ cd mealsApp
 4. Install NPM packages or YARN packages
    ```sh
    npm install
-   
    or
-   
    yarn 
    ```
    
 5. Then cd into /functions and install NPM packages or YARN packages
    ```sh
    npm install
-   
    or
-   
    yarn 
    ```
    
@@ -117,6 +113,6 @@ firebase functions:config:get > .runtimeconfig.json
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Additional screenshots, code examples and demos work well in this space also link to more resources.
 
 
