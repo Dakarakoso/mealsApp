@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { ScrollView } from "react-native";
 import { List, Divider } from "react-native-paper";
-import { Spacer } from "../../../components/spacer/spacer.component";
+import { Spacer } from "../../../components/Spacer/spacer.component";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import { SafeArea } from "../../../components/utility/safe-area.component";
 import { OrderButton } from "../components/restaurant-list.styles";

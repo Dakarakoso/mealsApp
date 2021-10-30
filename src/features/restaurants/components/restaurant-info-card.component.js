@@ -3,7 +3,7 @@ import { SvgXml } from "react-native-svg";
 import { View } from "react-native";
 
 import { Favourite } from "../../../components/favourites/favourite.component";
-import { Spacer } from "../../../components/spacer/spacer.component";
+import { Spacer } from "../../../components/Spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";

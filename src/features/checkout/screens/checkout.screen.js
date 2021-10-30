@@ -3,7 +3,7 @@ import { ScrollView } from "react-native";
 import { List, Divider } from "react-native-paper";
 
 import { Text } from "../../../components/typography/text.component";
-import { Spacer } from "../../../components/spacer/spacer.component";
+import { Spacer } from "../../../components/Spacer/spacer.component";
 import { SafeArea } from "../../../components/utility/safe-area.component";
 
 import { CartContext } from "../../../services/cart/cart.context";

@@ -3,7 +3,7 @@ import { Text } from "../typography/text.component";
 import { ScrollView, TouchableOpacity } from "react-native";
 import { Card } from "react-native-paper";
 import styled from "styled-components/native";
-import { Spacer } from "../spacer/spacer.component";
+import { Spacer } from "../Spacer/spacer.component";
 import { CompactRestaurantInfo } from "../restaurant/compact-restaurant-info.component";
 
 const FavouritesWrapper = styled(Card)`
